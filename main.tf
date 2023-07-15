@@ -8,7 +8,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "education-eks-${random_string.suffix.result}"
+  cluster_name = "studi-eks-ecf"
 }
 
 resource "random_string" "suffix" {
@@ -68,16 +68,6 @@ module "eks" {
       min_size     = 1
       max_size     = 3
       desired_size = 2
-    }
-
-    two = {
-      name = "node-group-2"
-
-      instance_types = ["t3.small"]
-
-      min_size     = 1
-      max_size     = 2
-      desired_size = 1
     }
   }
 }
