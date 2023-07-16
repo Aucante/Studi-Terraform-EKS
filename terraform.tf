@@ -1,5 +1,7 @@
 terraform {
 
+  backend "pg" {}
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
