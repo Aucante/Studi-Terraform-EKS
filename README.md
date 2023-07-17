@@ -1,8 +1,10 @@
 
-#### Launch EKS
+### EKS
+   
+#### Clone project Hashicorp
    
 ```bash
-  terraform apply
+  git clone https://github.com/hashicorp/learn-terraform-provision-eks-cluster.git
 ```
 
 #### Init BDD connection
@@ -12,4 +14,29 @@
 ```
 ```bash
   Terraform init
+```
+#### Init terraform
+   
+```bash
+  terraform init
+```
+#### Plan (show AWS updates)
+   
+```bash
+  terraform plan
+```
+#### Apply and create your EKS (confirm with "yes")
+   
+```bash
+  terraform apply
+```
+#### Destroy your EKS
+   
+```bash
+  terraform destroy
+```
+#### Check nodes
+   
+```bash
+  kubectl get nodes
 ```

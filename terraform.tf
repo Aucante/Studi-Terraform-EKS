@@ -1,6 +1,7 @@
 terraform {
 
-  backend "pg" {}
+  backend "pg" {
+  }
 
   required_providers {
     aws = {
