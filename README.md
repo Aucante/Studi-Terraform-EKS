@@ -26,7 +26,10 @@
   terraform plan
 ```
 #### Apply and create your EKS (confirm with "yes")
-   
+
+```bash
+  source .env
+```
 ```bash
   terraform apply
 ```
