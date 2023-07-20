@@ -43,3 +43,9 @@
 ```bash
   kubectl get nodes
 ```
+
+#### Check services
+   
+```bash
+  kubectl get svc
+```
